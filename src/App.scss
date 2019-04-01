@@ -12,16 +12,14 @@
   display: flex;
   align-items: center;
 
-  .inboxCounter
-  {
-  	margin-left: 20px;
-  }
+  .inboxCounter { margin-left: 20px; }
 
   .dropdown { margin-left: auto; }
 }
 
 .mainContent
 {
+  background: #eee;
 	position: relative;
 
   .messagesList,
@@ -29,5 +27,13 @@
   {
     height: calc(100vh - 50px);
     overflow: auto;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  .mainContent
+  {
+    display: flex;
   }
 }

@@ -68,3 +68,14 @@
 		margin: 20px 0 0;
 	}
 }
+
+@media screen and (min-width: 768px)
+{
+	.messageView
+	{
+		display: flex;
+		position: static;
+
+		&__backBtn { display: none; }
+	}
+}
