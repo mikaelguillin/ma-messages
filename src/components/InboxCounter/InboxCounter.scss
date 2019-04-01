@@ -1,0 +1,15 @@
+.inboxCounter
+{
+	background: #bbb;
+  	border-radius: 5px;
+  	padding: 5px 10px;
+  	display: flex;
+  	align-items: baseline;
+
+	&--new { background: #7ed321; }
+
+	.mypro-icon
+	{
+		margin-right: 10px;
+	}
+}

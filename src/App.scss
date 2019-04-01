@@ -1,0 +1,33 @@
+.App
+{
+  height: 100%;
+  overflow: hidden;
+}
+
+.mainHeader
+{
+  background: #1b5098;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  .inboxCounter
+  {
+  	margin-left: 20px;
+  }
+
+  .dropdown { margin-left: auto; }
+}
+
+.mainContent
+{
+	position: relative;
+
+  .messagesList,
+  .messagesView
+  {
+    height: calc(100vh - 50px);
+    overflow: auto;
+  }
+}

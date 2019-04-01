@@ -1,0 +1,35 @@
+.messageItem
+{
+	border-top: 1px solid #999;
+	text-align: left;
+	color: #666;
+	padding: 20px;
+	display: flex;
+	cursor: pointer;
+	transition: box-shadow .3s;
+
+	&:hover,
+	&:focus
+	{
+		box-shadow: 0 3px 5px #999;
+	}
+
+	&--unread
+	{
+		.messageItem__contactName,
+		.messageItem__subject { color: #000; }
+
+		.messageItem__contactName { font-weight: bold; }
+
+		.mypro-icon,
+		.messageItem__date { color: #0074e4; }
+	}
+
+	&__content { margin: 0 20px; }
+
+	&__date { flex: 1 0 auto; }
+
+	&__contactName { font-size: 1.25em; }
+
+	.mypro-icon { font-size: 1.5em; }
+}

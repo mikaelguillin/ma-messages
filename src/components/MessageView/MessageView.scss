@@ -1,0 +1,70 @@
+.messageView
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #eee;
+	overflow: auto;
+	padding: 20px;
+	flex-direction: column;
+
+	&--visible { display: flex; }
+
+	&__header,
+	&__content
+	{
+		background: #fff;
+		padding: 20px;
+	}
+
+	&__header
+	{
+		display: flex;
+		align-items: flex-start;
+
+		.mypro-icon
+		{
+			color: #0074e4;
+			font-size: 1.25em;			
+		}
+	}
+
+	&__content
+	{
+		flex: 1;
+		margin: 20px 0 0;
+	}
+
+	&__contact
+	{
+		margin-left: 20px;
+
+		strong
+		{
+			color: #0074e4;
+			font-weight: normal;
+		}
+	}
+
+	&__author
+	{
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+
+	&__backBtn
+	{
+		background: none;
+		border: 0;
+		cursor: pointer;
+		margin-left: auto;
+	}
+
+	&__body
+	{
+		margin: 20px 0 0;
+	}
+}
