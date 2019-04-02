@@ -3,6 +3,7 @@ import axios from 'axios';
 import RealtorsList from '../components/RealtorsList/RealtorsList';
 import { setRealtorsList } from '../actions';
 import { setRealtor } from '../actions';
+import { setUnreadMessages } from '../actions';
 
 const mapStateToProps = state => {
   return state.realtors
@@ -10,6 +11,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
 	setRealtor: id  => dispatch(setRealtor(id)),
+	setUnreadMessages: number => dispatch(setUnreadMessages(number)),
 	getRealtorsList: () => {
 		axios.get(`http://localhost:8080/realtors`)
 		    .then(res => {

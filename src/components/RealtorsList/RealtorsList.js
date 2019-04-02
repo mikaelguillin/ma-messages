@@ -11,6 +11,7 @@ class RealtorsList extends Component {
   handleChange = (e, {name, value}) => {
     this.setState({[name]: value});
     this.props.setRealtor(value);
+    this.props.setUnreadMessages(this.props.realtors[value].unread_messages);
   }
 
   componentDidMount() {

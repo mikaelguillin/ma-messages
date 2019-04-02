@@ -4,7 +4,7 @@ import logo from './logo-meilleursagentspro-neg.svg';
 import 'semantic-ui-css/semantic.min.css';
 import './App.scss';
 
-import InboxCounter from './components/InboxCounter/InboxCounter';
+import InboxCounter from './containers/InboxCounter';
 import RealtorsList from './containers/RealtorsList';
 import MessagesList from './containers/MessagesList';
 import MessageView from './containers/MessageView';

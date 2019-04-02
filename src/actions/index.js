@@ -18,11 +18,6 @@ export const markAsRead = id => ({
   id
 });
 
-export const setInboxCounter = number => ({
-	type: 'SET_INBOX_COUNTER',
-	number
-});
-
 export const setMessageView = data => ({
 	type: 'SET_MESSAGE_VIEW',
 	data
@@ -36,4 +31,9 @@ export const showMessageView = visibility => ({
 export const closeMessageView = visibility => ({
 	type: 'CLOSE_MESSAGE_VIEW',
 	visibility
+});
+
+export const setUnreadMessages = number => ({
+	type: 'SET_UNREAD_MESSAGES',
+	number
 });
