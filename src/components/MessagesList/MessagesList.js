@@ -6,7 +6,6 @@ import MessageItem from '../../containers/MessageItem';
 
 class MessagesList extends Component {
   markAsRead() {
-    console.log('read');
   }
 
   componentDidUpdate(prevProps) {
