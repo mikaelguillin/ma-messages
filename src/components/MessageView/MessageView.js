@@ -12,7 +12,7 @@ class MessageView extends Component {
 			    	<header className="messageView__header">
 			    		<div className={`mypro-icon mypro-icon-${this.props.message.type}`}></div>
 			    		<div className="messageView__contact">
-				    		<div class="messageView__author">{this.props.message.contact.firstname} {this.props.message.contact.lastname}</div>
+							<div className="messageView__author">{this.props.message.contact.firstname} {this.props.message.contact.lastname}</div>
 				    		<div>Email : <strong>{this.props.message.contact.email}</strong></div>
 				    		<div>Téléphone : <strong>{this.props.message.contact.phone}</strong></div>
 			    		</div>
