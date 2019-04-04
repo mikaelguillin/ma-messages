@@ -15,7 +15,7 @@ class App extends Component {
       <section className="App">
         <header className="mainHeader">
           <img src={logo} alt="Meilleurs agents pro" />
-          <InboxCounter number="4" />
+          <InboxCounter />
           <RealtorsList />
         </header>
         <div className="mainContent">
