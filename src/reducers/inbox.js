@@ -1,5 +1,5 @@
 const initialState = {
-
+	number: 0
 };
 
 const inbox = (state = initialState, action) => {
