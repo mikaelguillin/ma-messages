@@ -9,6 +9,10 @@ class MessageView extends Component {
 		if(this.props.message.body) {
 			return (
 			    <article className={`messageView ${(this.props.visible) ? 'messageView--visible' : ''}`}>
+					<button className="messageView__backBtn" type="button" onClick={this.props.closeMessage}>
+						<i class="mypro-icon mypro-icon-exit"></i>
+						Retour
+					</button>
 			    	<header className="messageView__header">
 			    		<div className={`mypro-icon mypro-icon-${this.props.message.type}`}></div>
 			    		<div className="messageView__contact">
@@ -16,7 +20,6 @@ class MessageView extends Component {
 				    		<div>Email : <strong>{this.props.message.contact.email}</strong></div>
 				    		<div>Téléphone : <strong>{this.props.message.contact.phone}</strong></div>
 			    		</div>
-			    		<button className="messageView__backBtn" type="button" onClick={this.props.closeMessage}>Retour</button>
 			    	</header>
 			    	<div className="messageView__content">
 				    	<div class="messageView__author">{this.props.message.contact.firstname} {this.props.message.contact.lastname}</div>
